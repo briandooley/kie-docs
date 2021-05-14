@@ -81,7 +81,7 @@ include::{drools-dir}/AuthoringAssets/test-scenarios-legacy-EXPECT-proc.adoc[lev
 include::{drools-dir}/AuthoringAssets/test-scenarios-comparison-legacy-new-ref.adoc[leveloffset=+1]
 
 
-== Next steps
+== Packaging and deploying a {PRODUCT} project
 {URL_DEPLOYING_AND_MANAGING_SERVICES}#assembly-packaging-deploying[_{PACKAGING_DEPLOYING_PROJECT}_]
 
 ifdef::parent-context[:context: {parent-context}]
