@@ -49,7 +49,7 @@ include::{enterprise-dir}/websphere/controller-wls-was-verify-proc.adoc[leveloff
 include::{enterprise-dir}/websphere/was-configure-embedded-engine-proc.adoc[leveloffset=+1]
 
 include::{enterprise-dir}/installation/securing-passwords-was-proc.adoc[leveloffset=+1]
-== Next steps
+== Getting started and designing decision services
 * {URL_GETTING_STARTED}#assembly-getting-started-decision-services[_{GETTING_STARTED_DECISION_SERVICE}_]
 * {URL_DEVELOPING_DECISION_SERVICES}#assembly-guided-decision-tables[_{GUIDED_DECISION_TABLES}_]
 
