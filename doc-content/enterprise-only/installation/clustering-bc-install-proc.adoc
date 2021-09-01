@@ -51,7 +51,7 @@ $ ./add-user.sh -a --user <JMS_USER> --password <JMS_PWD> --role admin
 <EAP_HOME>/bin/domain.bat --host-config=host-slave.xml -Djboss.domain.master.address=<MASTER_NODE_IP>
 ----
 +
-For more information, see the following sections of the _Red Hat JBoss EAP 7.3 Configuration Guide_:
+For more information, see the following sections of the _Red Hat JBoss EAP 7.4 Configuration Guide_:
 
 * https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/{EAP_VERSION}/html/configuration_guide/starting_and_stopping_jboss_eap#starting_jboss_eap["Starting JBoss EAP"]
 * https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/{EAP_VERSION}/html/configuration_guide/jboss_eap_management#managed_domain_configuration_files["Managed Domain Configuration Files"]
