@@ -3,7 +3,7 @@
 
 For more efficient searching across cluster nodes, install {DATAGRID} and configure it for the {PRODUCT} clustered environment.
 
-For information about {DATAGRID} advanced installation and configuration options and {DATAGRID} modules for {EAP}, see the https://access.redhat.com/documentation/en-us/red_hat_data_grid/{DATAGRID_VERSION}/html-single/red_hat_data_grid_user_guide/index#[_{DATAGRID} User Guide_].
+For information about {DATAGRID} advanced installation and configuration options and {DATAGRID} modules for {EAP}, see the https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.1/html/data_grid_server_guide/index[_{DATAGRID} Server Guide_].
 
 NOTE: Do not install {DATAGRID} on the same node as {CENTRAL}.
 
