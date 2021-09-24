@@ -1,20 +1,18 @@
 [id='kie-server-thread-efficiency.adoc_{context}']
-= Thread Efficiency
+= Thread efficiency
 
-To ensure the optimal number of threads used, set the threading system properties to the number of CPUs in the system + 1.
+To ensure that the optimal number of threads are used, set the value of the threading system properties to the sum of the number of CPUs plus one.
 
-. In your Red Hat Process Automation Manager installation directory, navigate to the standalone-full.xml file. For example, if you use a Red Hat JBoss EAP installation for Red Hat Process Automation Manager, go to $EAP_HOME/standalone/configuration/standalone-full.xml.
-. Open the standalone-full.xml file.
-. Under the <system-properties> tag, set the following JVM properties:
+. In your Red Hat Process Automation Manager installation directory, navigate to the `standalone-full.xml` file. For example, if you use a {EAP}  installation for {PRODUCT}, go to `$EAP_HOME/standalone/configuration/standalone-full.xml`.
+. Open the `standalone-full.xml` file.
+. Under the `<system-properties>` tag, set the following JVM properties to the number of CPUs plus one:
 
-[cols="60%,40%"]
-|===
-|Property|Value
+[source,xml,subs="attributes+"]
+----
+org.appformer.concurrent.managed.thread.limit
+org.appformer.concurrent.unmanaged.thread.limit
+org.appformer.concurrent.indexing.thread.limit
+org.appformer.concurrent.rest.api.thread.limit
+----
 
-|org.appformer.concurrent.managed.thread.limit|(Number of CPUs+1)
-|org.appformer.concurrent.unmanaged.thread.limit|(Number of CPUs+1)
-|org.appformer.concurrent.indexing.thread.limit|(Number of CPUs+1)
-|org.appformer.concurrent.rest.api.thread.limit|(Number of CPUs+1)
-|===
-
-NOTE:  (Number of CPUs+1) is a valid baseline value for all properties. You may have to fine-tune further based on additional testing.
+NOTE: The number of CPUs plus one is a valid baseline value for all properties. You may have to fine-tune further based on additional testing.
