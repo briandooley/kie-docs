@@ -1,4 +1,4 @@
-[id='kie-server-thread-efficiency.adoc_{context}']
+[id='kie-server-thread-efficiency-con_{context}']
 = Thread efficiency
 
 To ensure that the optimal number of threads are used, set the value of the threading system properties to the sum of the number of CPUs plus one.
