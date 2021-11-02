@@ -70,7 +70,7 @@ container. The Web container version of the WAR contains only the REST interface
 . Configure user(s) and role(s) by executing the following command:
 [source,sh]
 ----
-$ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity='kieserver'),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity='kieserver', clear={password='kieserver1!'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['kie-server'])"
+$ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity='kieserver'),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity='kieserver', clear={password='kieserver1!'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity='kieserver', name=role, value=['kie-server'])"
 ----
 You can choose a different user name and password, just make sure that the user has role ``kie-server``.
 . Start the server by running ``WILDFLY_HOME/bin/standalone.[sh|bat] -c standalone-full.xml <bootstrap_switches>``. You can check out the standard output or WildFly logs in `WILDFLY_HOME/standalone/logs` to see if the application deployed successfully. Please read the table above for the bootstrap switches that can be used to properly configure the instance. For instance:

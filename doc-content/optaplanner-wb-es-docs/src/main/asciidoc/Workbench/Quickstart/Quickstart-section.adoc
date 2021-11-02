@@ -18,7 +18,7 @@ The first step consists of setting up Wildfly instance and deploying KIE artifac
 +
 [source,sh]
 ----
-$ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=<USERNAME>),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=<USERNAME>, clear={password='<PASSWORD>'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['admin','kie-server'])"
+$ ./bin/jboss-cli.sh
 ----
 * Windows users:
 +

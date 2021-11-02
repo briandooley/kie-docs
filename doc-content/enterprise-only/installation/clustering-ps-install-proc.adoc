@@ -31,7 +31,8 @@ For more information about management users, see https://access.redhat.com/docum
 +
 [source]
 ----
-$ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=<USERNAME>),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=<USERNAME>, clear={password='<PASSWORD>'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['admin'])"----
+$ ./bin/jboss-cli.sh
+----
 +
 * On Windows, enter:
 +
