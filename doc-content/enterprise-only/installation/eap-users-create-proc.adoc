@@ -3,7 +3,15 @@
 = Creating users
 If you used the deployable ZIP files to install {PRODUCT}, before you can log in to {CENTRAL} or {KIE_SERVER}, you must create users. This section shows you how to create a {CENTRAL} user with the `admin`, `rest-all`, and `kie-server` roles and a {KIE_SERVER} user that has the `kie-server` role. For information about roles, see xref:roles-users-con_install-on-eap[].
 
-NOTE: If you used the installer to install {PRODUCT}, you created at least one user during that process. The `EAP_HOME/standalone/configuration/application-users.properties` file contains application users and their passwords.
+[NOTE]
+====
+It is recommended to use file-based users in {PRODUCT} rather than properties-based users. You can change to using file-based users by running the following command:
+
+[source,bash]
+----
+$ ./bin/elytron-tool.sh filesystem-realm --users-file application-users.properties --roles-file application-roles.properties --output-location kie-fs-realm-users
+----
+====
 
 .Prerequisites
 * {PRODUCT} is installed in the base directory of the {EAP} installation (`_EAP_HOME_`).
