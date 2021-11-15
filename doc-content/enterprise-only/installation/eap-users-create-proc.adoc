@@ -5,7 +5,11 @@ If you used the deployable ZIP files to install {PRODUCT}, before you can log in
 
 [NOTE]
 ====
-It is recommended to use file-based users in {PRODUCT} rather than properties-based users. You can change to using file-based users by running the following command:
+{PRODUCT} stores user data as a set of properties or as a set of files. File-based storage provides several extra features, such as SSH login and a user maintenance UI. 
+
+The user script examples in this documentation use the file-based user script, `jboss-cli.sh`, instead of the property-based user script, `add-users.sh`.
+
+To change {PRODUCT} from using property-based user storage to file-based user storage, navigate to the `__EAP_HOME__` directory and run the following command:
 
 [source,bash]
 ----
