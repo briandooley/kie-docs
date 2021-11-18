@@ -84,14 +84,14 @@ You should install {CENTRAL} and {KIE_SERVER} on different servers in production
 ====
 
 .Optional
-You can create several users at once using a single file containing the data for all the users.
+To create several users at one time, create a file that contains the user data and run the following command, where <USER_DATA>.cli is the file that contains the user data:
 
 [source,bash]
 ----
-$ ./bin/jboss-cli.sh --file=users.cli
+$ ./bin/jboss-cli.sh --file=<USER_DATA>.cli
 ----
 
-where the users.cli file contains user data such as in the following example:
+The <USER_DATA>.cli file should contain data similar to the following example:
 
 [source,bash]
 ----
