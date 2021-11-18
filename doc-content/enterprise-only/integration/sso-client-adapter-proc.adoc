@@ -11,10 +11,10 @@ After you install RH-SSO, you must install the RH-SSO client adapter for {EAP} a
 .Procedure
 . Navigate to the https://access.redhat.com/jbossnetwork/restricted/listSoftware.html[Software Downloads] page in the Red Hat Customer Portal (login required), and select the product and version from the drop-down options:
 
-* *Product:* Red Hat Single Sign-On
+* *Product:* {RH-SSO}
 * *Version:* {RH-SSO_VERSION}
 . Select the *Patches* tab.
-. Download *Red Hat Single Sign-on {RH-SSO_VERSION} Client Adapter for EAP 7* (`rh-sso-{RH-SSO_VERSION_LONG}-eap7-adapter.zip` or the latest version).
+. Download *{RH-SSO} {RH-SSO_VERSION} Client Adapter for EAP 7* (`rh-sso-{RH-SSO_VERSION_LONG}-eap7-adapter.zip` or the latest version).
 . Extract and install the adapter zip file. For installation instructions, see the "JBoss EAP Adapter" section of the https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/{RH-SSO_VERSION}/html-single/securing_applications_and_services_guide[_Red Hat Single Sign On Securing Applications and Services Guide_].
 +
 NOTE: Install the adapter with the `-Dserver.config=standalone-full.xml` property.
