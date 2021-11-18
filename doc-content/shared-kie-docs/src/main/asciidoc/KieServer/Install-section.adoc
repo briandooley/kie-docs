@@ -67,7 +67,7 @@ container. The Web container version of the WAR contains only the REST interface
 
 . Download and unzip the WildFly distribution. Let's call the root of the distribution ``WILDFLY_HOME``. This directory is named after the WildFly version, so for example ``wildfly-14.0.1.Final``.
 . Download _kie-server- -ee7.war_ and place it into ``WILDFLY_HOME/standalone/deployments``.
-. Configure user(s) and role(s) by executing the following command:
+. Configure users and roles by executing the following command:
 [source,sh]
 ----
 $ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity='kieserver'),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity='kieserver', clear={password='kieserver1!'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity='kieserver', name=role, value=['kie-server'])"
