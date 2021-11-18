@@ -70,29 +70,29 @@ $ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/
 endif::[]
 . Make a note of your user names and passwords.
 
-.Optional
+. Optional:
 If you installed {CENTRAL} and {KIE_SERVER} in the same server instance, you can create a single user that has both of these roles:
-
++
 [source,bash]
 ----
 $ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=<USERNAME>),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=<USERNAME>, clear={password='<PASSWORD>'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['admin','rest-all','kie-server'])"
 ----
-
++
 [NOTE]
 ====
 You should install {CENTRAL} and {KIE_SERVER} on different servers in production environments.
 ====
-
-.Optional
-To create several users at one time, create a file that contains the user data and run the following command, where <USER_DATA>.cli is the file that contains the user data:
-
++
+. Optional:
+To create several users at one time, create a file that contains the user data and run the following command, where `<USER_DATA>.cli` is the file that contains the user data:
++
 [source,bash]
 ----
 $ ./bin/jboss-cli.sh --file=<USER_DATA>.cli
 ----
-
-The <USER_DATA>.cli file should contain data similar to the following example:
-
++
+The `<USER_DATA>.cli` file should contain data similar to the following example:
++
 [source,bash]
 ----
 embed-server --std-out=echo
