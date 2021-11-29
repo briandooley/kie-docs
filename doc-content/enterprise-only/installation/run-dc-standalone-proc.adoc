@@ -57,5 +57,5 @@ See <<business-central-system-properties-ref_install-on-eap>> for more informati
 +
 [NOTE]
 ====
-To enable User and Group management in {CENTRAL}, set the `org.uberfire.ext.security.management.wildfly.cli.folderPath` property to `kie-fs-realm-users`.
+To enable user and group management in {CENTRAL}, set the value of the `org.uberfire.ext.security.management.wildfly.cli.folderPath` property to `kie-fs-realm-users`.
 ====
