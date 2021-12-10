@@ -71,6 +71,15 @@ mount -o rw,sync,actimeo=1 <NFS_SERVER_IP>:<DATA_SHARE>/kie-wb-playground kie-wb
      value="/data"/>
   <property name="es.set.netty.runtime.available.processors"
      value="false"/>
+  <property name="org.appformer.ext.metadata.infinispan.username" value="<DATAGRID_USER_NAME>"/>
+  <property name="org.appformer.ext.metadata.infinispan.password" value="<DATA_GRID_PASSWORD>"/>
+  <property name="org.appformer.ext.metadata.index" value="infinispan"/>
+  <property name="org.appformer.ext.metadata.infinispan.sasl.qop" value="auth"/>
+  <property name="org.appformer.ext.metadata.infinispan.server.name" value="infinispan"/>
+  <property name="org.appformer.ext.metadata.infinispan.realm" value="default"/>
+  <property name="org.appformer.concurrent.managed.thread.limit" value="1000"/>
+  <property name="org.appformer.concurrent.unmanaged.thread.limit" value="1000"/>
+  <property name="org.appformer.concurrent.indexing.thread.limit" value="0"/>
 </system-properties>
 ----
 +
