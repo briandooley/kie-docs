@@ -25,28 +25,28 @@ NOTE: Do not install {DATAGRID} on the same node as {CENTRAL}.
 $ ./cli.sh user create <DATAGRID_USER_NAME> -p <DATA_GRID_PASSWORD> -r default
 ----
 +
-. To change Data Grid server memory parameters, open `__JDG_HOME__/bin/server.conf` and replace
+. To change {DATAGRID} server memory parameters, open the `__JDG_HOME__/bin/server.conf` file and locate the following line:
 +
 [source]
 ----
 -Xms64m -Xmx512m -XX:MetaspaceSize=64M
 ----
 +
-with
+. Replace this line with the following values:
 +
 [source]
 ----
 -Xms256m -Xmx2048m -XX:MetaspaceSize=256M
 ----
 +
-. Open `__JDG_HOME__/server/conf/infinispan.xml` and replace
+. Open `__JDG_HOME__/server/conf/infinispan.xml` file and locate the following line:
 +
 [source]
 ----
 <hotrod-connector name="hotrod"/>
 ----
 +
-with
+. Replace this line with the following values:
 +
 [source]
 ----

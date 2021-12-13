@@ -49,7 +49,7 @@ mount -o rw,sync,actimeo=1 <NFS_SERVER_IP>:<DATA_SHARE>/kie-wb-playground kie-wb
 * `<AMQ_BROKER_IP_ADDRESS>` is the IP address of the AMQ Broker.
 * `<DATA_GRID_NODE_IP>` is the IP address where {DATAGRID} is installed.
 * `<SERVER_NAME>` is the server name specified in your {DATAGRID} server configuration.
-* `<SASL_QOP>` is the combination of auth, auth-int and auth-conf values for your {DATAGRID} server configuration.
+* `<SASL_QOP>` is the combination of `auth`, `auth-int` and `auth-conf` values for your {DATAGRID} server configuration.
 * `<DATAGRID_USER_NAME>` and `<DATA_GRID_PASSWORD>` are the credentials that you defined when creating the {DATAGRID}.
 +
 [source,xml]
