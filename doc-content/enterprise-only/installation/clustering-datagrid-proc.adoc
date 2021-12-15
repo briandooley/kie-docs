@@ -32,7 +32,7 @@ $ ./cli.sh user create <DATAGRID_USER_NAME> -p <DATA_GRID_PASSWORD> -r default
 -Xms64m -Xmx512m -XX:MetaspaceSize=64M
 ----
 +
-. Replace this line with the following values:
+. Replace this line with the following content:
 +
 [source]
 ----
@@ -46,7 +46,7 @@ $ ./cli.sh user create <DATAGRID_USER_NAME> -p <DATA_GRID_PASSWORD> -r default
 <hotrod-connector name="hotrod"/>
 ----
 +
-. Replace this line with the following values:
+. Replace this line with the following content:
 +
 [source]
 ----
