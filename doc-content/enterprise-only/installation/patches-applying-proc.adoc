@@ -131,7 +131,9 @@ $ mv /tmp/rhbaMavenRepoUpdate/rhba-{PRODUCT_VERSION_LONG}.GA-maven-repository/ma
 You can remove the `/tmp/rhbaMavenRepoUpdate` folder after you complete the update.
 ====
 
-. Apply the file updates. Navigate to the temporary directory where you extracted the `{PRODUCT_INIT}-$VERSION-update.zip` file and run the `kie-fs-realm-patch` script in the following format:
+. If you are changing {PRODUCT} from using property-based user storage to file-based user storage, apply these file updates and configuration updates. 
++
+Navigate to the temporary directory where you extracted the `{PRODUCT_INIT}-$VERSION-update.zip` file and run the `kie-fs-realm-patch` script in the following format:
 +
 On Linux or Unix-based systems:
 +
@@ -146,8 +148,8 @@ On Windows:
 ----
 $ ./elytron/kie-fs-realm-patch.bat $JBOSS_HOME/standalone/configuration/kie-fs-realm-users/
 ----
-
-. Apply configuration updates. Navigate to the `$JBOSS_HOME` directory and run the following commands:
++
+Navigate to the `$JBOSS_HOME` directory and run the following commands:
 +
 On Linux or Unix-based systems:
 +
