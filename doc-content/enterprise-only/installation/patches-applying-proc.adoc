@@ -163,7 +163,7 @@ $ ./elytron/kie-fs-realm-patch.bat $JBOSS_HOME/standalone/configuration/kie-fs-r
 ./bin/jboss-cli.sh --connect --file={PRODUCT_INIT}-$VERSION-update/rhpam-7.12.0-update/elytron/add-kie-fs-realm.cli
 ----
 +
-On Windows:
+* On Windows:
 +
 [source,subs="attributes+"]
 ----
