@@ -142,7 +142,7 @@ You can remove the `/tmp/rhbaMavenRepoUpdate` folder after you complete the upda
 $ ./elytron/kie-fs-realm-patch.sh ~/$JBOSS_HOME/standalone/configuration/kie-fs-realm-users/
 ----
 +
-On Windows:
+* On Windows:
 +
 [source,subs="attributes+"]
 ----
