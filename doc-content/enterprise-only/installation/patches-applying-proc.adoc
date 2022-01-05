@@ -135,7 +135,7 @@ You can remove the `/tmp/rhbaMavenRepoUpdate` folder after you complete the upda
 +
 .. Navigate to the directory where you extracted the `{PRODUCT_INIT}-$VERSION-update.zip` file and run one of the following commands to apply the `kie-fs-realm` patch:
 +
-On Linux or Unix-based systems:
+* On Linux or Unix-based systems:
 +
 [source,subs="attributes+"]
 ----
