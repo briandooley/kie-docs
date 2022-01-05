@@ -131,7 +131,7 @@ $ mv /tmp/rhbaMavenRepoUpdate/rhba-{PRODUCT_VERSION_LONG}.GA-maven-repository/ma
 You can remove the `/tmp/rhbaMavenRepoUpdate` folder after you complete the update.
 ====
 
-. If you are changing {PRODUCT} from using property-based user storage to file-based user storage, apply these file updates and configuration updates. 
+. If you are changing {PRODUCT} from using property-based user storage to file-based user storage, complete the following steps:
 +
 Navigate to the temporary directory where you extracted the `{PRODUCT_INIT}-$VERSION-update.zip` file and run the `kie-fs-realm-patch` script in the following format:
 +
