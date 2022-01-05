@@ -151,7 +151,7 @@ $ ./elytron/kie-fs-realm-patch.bat $JBOSS_HOME/standalone/configuration/kie-fs-r
 +
 .. Navigate to the `$JBOSS_HOME` directory and run the following commands:
 +
-On Linux or Unix-based systems:
+* On Linux or Unix-based systems:
 +
 [source,subs="attributes+"]
 ----
