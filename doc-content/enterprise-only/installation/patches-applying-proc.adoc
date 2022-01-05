@@ -149,7 +149,7 @@ On Windows:
 $ ./elytron/kie-fs-realm-patch.bat $JBOSS_HOME/standalone/configuration/kie-fs-realm-users/
 ----
 +
-Navigate to the `$JBOSS_HOME` directory and run the following commands:
+.. Navigate to the `$JBOSS_HOME` directory and run the following commands:
 +
 On Linux or Unix-based systems:
 +
